@@ -31,18 +31,21 @@ for (int i = 0; i <tam-1; i++) {
 
 void bubbleSort(int *vet, int tam){
 int aux=0;
+
 for(int i=0;i<tam-1;i++){
   bool trocou=false;
+
   for(int j=0;j<tam-i-1;j++){
+
     if(vet[j]>vet[j+1]){
       aux=vet[j];
       vet[j]=vet[j+1];
       vet[j+1]=aux;
       trocou=true;
-    }
-    }
+        }
+      }
     if(trocou==false){
       return;
+   }
   }
-}
 }
