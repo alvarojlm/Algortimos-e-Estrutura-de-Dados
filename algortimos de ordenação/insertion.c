@@ -43,7 +43,7 @@ for(int i=1;i<tam;i++){ // indice no vetor desordenado
        if(vet[i]<ord[j]){  //verifica onde o vetor ordenado é maior que o desordenado
        printf("\nVetor atual: ");
        impV(ord,tam);
-        for(int s=i;s>j;s--){
+        for(int s=i;s>j;s--){ //começa no indice que está o valor a ser mudado e deve ir até onde o valor é menor para que seja inserido correntamente. 
           ord[s]=ord[s-1];
           }
           printf("\nVetor após alocar: ");
